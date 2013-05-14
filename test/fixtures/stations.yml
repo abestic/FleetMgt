@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  City: MyString
+  State_ID: 1
+  Active: false
+
+two:
+  City: MyString
+  State_ID: 1
+  Active: false

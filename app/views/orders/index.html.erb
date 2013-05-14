@@ -1,0 +1,31 @@
+<h1>Listing orders</h1>
+
+<table>
+  <tr>
+    <th>Contact id</th>
+    <th>Facility id</th>
+    <th>Railcar demand</th>
+    <th>Railcar type id</th>
+    <th>Status id</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @orders.each do |order| %>
+  <tr>
+    <td><%= order.Contact_ID %></td>
+    <td><%= order.Facility_ID %></td>
+    <td><%= order.Railcar_Demand %></td>
+    <td><%= order.Railcar_Type_ID %></td>
+    <td><%= order.Status_ID %></td>
+    <td><%= link_to 'Show', order %></td>
+    <td><%= link_to 'Edit', edit_order_path(order) %></td>
+    <td><%= link_to 'Destroy', order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Order', new_order_path %>

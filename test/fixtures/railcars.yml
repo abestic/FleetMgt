@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Initial: MyString
+  Number: MyString
+  Railcar_Type_ID: 1
+  Inside_Length: 1
+  Capacity: 1
+  GWR: 1
+  Active: false
+
+two:
+  Initial: MyString
+  Number: MyString
+  Railcar_Type_ID: 1
+  Inside_Length: 1
+  Capacity: 1
+  GWR: 1
+  Active: false

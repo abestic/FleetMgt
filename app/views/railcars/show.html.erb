@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Initial:</b>
+  <%= @railcar.Initial %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @railcar.Number %>
+</p>
+
+<p>
+  <b>Railcar type id:</b>
+  <%= @railcar.Railcar_Type_ID %>
+</p>
+
+<p>
+  <b>Inside length:</b>
+  <%= @railcar.Inside_Length %>
+</p>
+
+<p>
+  <b>Capacity:</b>
+  <%= @railcar.Capacity %>
+</p>
+
+<p>
+  <b>Gwr:</b>
+  <%= @railcar.GWR %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @railcar.Active %>
+</p>
+
+
+<%= link_to 'Edit', edit_railcar_path(@railcar) %> |
+<%= link_to 'Back', railcars_path %>

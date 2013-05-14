@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Order id:</b>
+  <%= @demand.Order_ID %>
+</p>
+
+<p>
+  <b>Railcar id:</b>
+  <%= @demand.Railcar_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_demand_path(@demand) %> |
+<%= link_to 'Back', demands_path %>

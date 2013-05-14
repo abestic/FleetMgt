@@ -1,0 +1,27 @@
+<h1>Listing railcar_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Active</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @railcar_types.each do |railcar_type| %>
+  <tr>
+    <td><%= railcar_type.Name %></td>
+    <td><%= railcar_type.Description %></td>
+    <td><%= railcar_type.Active %></td>
+    <td><%= link_to 'Show', railcar_type %></td>
+    <td><%= link_to 'Edit', edit_railcar_type_path(railcar_type) %></td>
+    <td><%= link_to 'Destroy', railcar_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Railcar type', new_railcar_type_path %>

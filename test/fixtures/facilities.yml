@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Name: MyString
+  Address_1: MyString
+  Address_2: MyString
+  City: MyString
+  State_ID: 1
+  Postal_Code: MyString
+  Station_ID: 1
+  Carrier_ID: 1
+  Routing_Notes: MyText
+  Active: false
+
+two:
+  Name: MyString
+  Address_1: MyString
+  Address_2: MyString
+  City: MyString
+  State_ID: 1
+  Postal_Code: MyString
+  Station_ID: 1
+  Carrier_ID: 1
+  Routing_Notes: MyText
+  Active: false

@@ -1,0 +1,57 @@
+<%= form_for(@facility) do |f| %>
+  <% if @facility.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@facility.errors.count, "error") %> prohibited this facility from being saved:</h2>
+
+      <ul>
+      <% @facility.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Address_1 %><br />
+    <%= f.text_field :Address_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Address_2 %><br />
+    <%= f.text_field :Address_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :City %><br />
+    <%= f.text_field :City %>
+  </div>
+  <div class="field">
+    <%= f.label :State_ID %><br />
+    <%= f.number_field :State_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Postal_Code %><br />
+    <%= f.text_field :Postal_Code %>
+  </div>
+  <div class="field">
+    <%= f.label :Station_ID %><br />
+    <%= f.number_field :Station_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Carrier_ID %><br />
+    <%= f.number_field :Carrier_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Routing_Notes %><br />
+    <%= f.text_area :Routing_Notes %>
+  </div>
+  <div class="field">
+    <%= f.label :Active %><br />
+    <%= f.check_box :Active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

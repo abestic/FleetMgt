@@ -1,4 +1,40 @@
 FleetMgt::Application.routes.draw do
+  resources :statuses
+
+
+  resources :railcar_types
+
+
+  resources :railcars
+
+
+  resources :demands
+
+
+  resources :orders
+
+
+  resources :contacts
+
+
+  resources :clients
+
+
+  resources :users
+
+
+  resources :carriers
+
+
+  resources :states
+
+
+  resources :stations
+
+
+  resources :facilities
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

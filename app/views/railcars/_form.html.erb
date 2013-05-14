@@ -1,0 +1,45 @@
+<%= form_for(@railcar) do |f| %>
+  <% if @railcar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@railcar.errors.count, "error") %> prohibited this railcar from being saved:</h2>
+
+      <ul>
+      <% @railcar.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Initial %><br />
+    <%= f.text_field :Initial %>
+  </div>
+  <div class="field">
+    <%= f.label :Number %><br />
+    <%= f.text_field :Number %>
+  </div>
+  <div class="field">
+    <%= f.label :Railcar_Type_ID %><br />
+    <%= f.number_field :Railcar_Type_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :Inside_Length %><br />
+    <%= f.number_field :Inside_Length %>
+  </div>
+  <div class="field">
+    <%= f.label :Capacity %><br />
+    <%= f.number_field :Capacity %>
+  </div>
+  <div class="field">
+    <%= f.label :GWR %><br />
+    <%= f.number_field :GWR %>
+  </div>
+  <div class="field">
+    <%= f.label :Active %><br />
+    <%= f.check_box :Active %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

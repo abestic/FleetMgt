@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @facility.Name %>
+</p>
+
+<p>
+  <b>Address 1:</b>
+  <%= @facility.Address_1 %>
+</p>
+
+<p>
+  <b>Address 2:</b>
+  <%= @facility.Address_2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @facility.City %>
+</p>
+
+<p>
+  <b>State id:</b>
+  <%= @facility.State_ID %>
+</p>
+
+<p>
+  <b>Postal code:</b>
+  <%= @facility.Postal_Code %>
+</p>
+
+<p>
+  <b>Station id:</b>
+  <%= @facility.Station_ID %>
+</p>
+
+<p>
+  <b>Carrier id:</b>
+  <%= @facility.Carrier_ID %>
+</p>
+
+<p>
+  <b>Routing notes:</b>
+  <%= @facility.Routing_Notes %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @facility.Active %>
+</p>
+
+
+<%= link_to 'Edit', edit_facility_path(@facility) %> |
+<%= link_to 'Back', facilities_path %>

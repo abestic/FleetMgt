@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Contact id:</b>
+  <%= @order.Contact_ID %>
+</p>
+
+<p>
+  <b>Facility id:</b>
+  <%= @order.Facility_ID %>
+</p>
+
+<p>
+  <b>Railcar demand:</b>
+  <%= @order.Railcar_Demand %>
+</p>
+
+<p>
+  <b>Railcar type id:</b>
+  <%= @order.Railcar_Type_ID %>
+</p>
+
+<p>
+  <b>Status id:</b>
+  <%= @order.Status_ID %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

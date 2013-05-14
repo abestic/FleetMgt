@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @railcar_type.Name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @railcar_type.Description %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @railcar_type.Active %>
+</p>
+
+
+<%= link_to 'Edit', edit_railcar_type_path(@railcar_type) %> |
+<%= link_to 'Back', railcar_types_path %>

@@ -1,0 +1,35 @@
+<h1>Listing railcars</h1>
+
+<table>
+  <tr>
+    <th>Initial</th>
+    <th>Number</th>
+    <th>Railcar type id</th>
+    <th>Inside length</th>
+    <th>Capacity</th>
+    <th>Gwr</th>
+    <th>Active</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @railcars.each do |railcar| %>
+  <tr>
+    <td><%= railcar.Initial %></td>
+    <td><%= railcar.Number %></td>
+    <td><%= railcar.Railcar_Type_ID %></td>
+    <td><%= railcar.Inside_Length %></td>
+    <td><%= railcar.Capacity %></td>
+    <td><%= railcar.GWR %></td>
+    <td><%= railcar.Active %></td>
+    <td><%= link_to 'Show', railcar %></td>
+    <td><%= link_to 'Edit', edit_railcar_path(railcar) %></td>
+    <td><%= link_to 'Destroy', railcar, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Railcar', new_railcar_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Contact_ID: 1
+  Facility_ID: 1
+  Railcar_Demand: 1
+  Railcar_Type_ID: 1
+  Status_ID: 1
+
+two:
+  Contact_ID: 1
+  Facility_ID: 1
+  Railcar_Demand: 1
+  Railcar_Type_ID: 1
+  Status_ID: 1
