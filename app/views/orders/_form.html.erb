@@ -19,6 +19,10 @@
     <%= f.label :Facility_ID %><br />
     <%= f.number_field :Facility_ID %>
   </div>
+    <div class="field">
+    <%= f.label :Manager_ID %><br />
+    <%= f.select :Manager_ID, @managers.map {|r| [r.First_Name, r.id]} %>
+  </div>
   <div class="field">
     <%= f.label :Railcar_Demand %><br />
     <%= f.number_field :Railcar_Demand %>
@@ -29,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :Status_ID %><br />
-    <%= f.number_field :Status_ID %>
+    <%= f.select :Status_ID, @statuses.map {|r| [r.Code, r.id]} %>
   </div>
   <div class="actions">
     <%= f.submit %>

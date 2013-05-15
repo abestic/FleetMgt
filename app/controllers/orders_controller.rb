@@ -25,6 +25,8 @@ class OrdersController < ApplicationController
   # GET /orders/new.json
   def new
     @order = Order.new
+    @managers = Manager.all
+    @statuses = Status.all
 
     respond_to do |format|
       format.html # new.html.erb

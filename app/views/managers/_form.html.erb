@@ -1,10 +1,10 @@
-<%= form_for(@contact) do |f| %>
-  <% if @contact.errors.any? %>
+<%= form_for(@manager) do |f| %>
+  <% if @manager.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+      <h2><%= pluralize(@manager.errors.count, "error") %> prohibited this manager from being saved:</h2>
 
       <ul>
-      <% @contact.errors.full_messages.each do |msg| %>
+      <% @manager.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
@@ -21,21 +21,11 @@
   </div>
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :Client_ID %><br />
-    
-
-    <%= f.number_field :Client_ID %>
-  </div>
-  <div class="field">
-    <%= f.label :User_ID %><br />
-    <%= f.number_field :User_ID %>
+    <%= f.text_field :email %>
   </div>
   <div class="field">
     <%= f.label :Active %><br />
-    <%= f.check_box :Active, checked: true %>
+    <%= f.check_box :Active %>
   </div>
   <div class="actions">
     <%= f.submit %>

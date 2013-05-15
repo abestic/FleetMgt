@@ -1,4 +1,7 @@
 FleetMgt::Application.routes.draw do
+  resources :managers
+
+
   resources :statuses
 
 
