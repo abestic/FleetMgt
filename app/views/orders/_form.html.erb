@@ -12,28 +12,29 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :Contact_ID %><br />
-    <%= f.number_field :Contact_ID %>
+    <%= f.label "Client Contact" %><br />
+    <%= collection_select :order, :Contact_ID, Contact.all, :id, :First_Name, options ={:prompt => true} %>
   </div>
   <div class="field">
-    <%= f.label :Facility_ID %><br />
-    <%= f.number_field :Facility_ID %>
+    <%= f.label "Facility" %><br />
+    <%= collection_select :order, :Facility_ID, Facility.all, :id, :Name, options ={:prompt => true} %>
   </div>
     <div class="field">
-    <%= f.label :Manager_ID %><br />
-    <%= f.select :Manager_ID, @managers.map {|r| [r.First_Name, r.id]} %>
+    <%= f.label "LAM" %><br />
+    <%= collection_select :order, :Manager_ID, Manager.all, :id, :First_Name, options ={:prompt => true} %>
   </div>
   <div class="field">
-    <%= f.label :Railcar_Demand %><br />
+    <%= f.label "Railcar Demand" %><br />
     <%= f.number_field :Railcar_Demand %>
   </div>
   <div class="field">
-    <%= f.label :Railcar_Type_ID %><br />
-    <%= f.number_field :Railcar_Type_ID %>
+    <%= f.label "Railcar Type" %><br />
+    <%= collection_select :order, :Railcar_Type_ID, RailcarType.all, :id, :Name, options ={:prompt => true} %>
   </div>
   <div class="field">
-    <%= f.label :Status_ID %><br />
-    <%= f.select :Status_ID, @statuses.map {|r| [r.Code, r.id]} %>
+    <%= f.label "Order Status" %><br />
+    
+    <%= select(:order, :Status_ID, Status.all.collect {|s| [s.Code, s.id]}, {:prompt => true}) %>
   </div>
   <div class="actions">
     <%= f.submit %>

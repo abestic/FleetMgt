@@ -29,7 +29,7 @@
   </div>
   <div class="field">
     <%= f.label :State_ID %><br />
-    <%= f.number_field :State_ID %>
+    <%= collection_select :state, :State_ID, State.all, :id, :Code, options ={:prompt => true} %>
   </div>
   <div class="field">
     <%= f.label :Postal_Code %><br />
